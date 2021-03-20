@@ -7,7 +7,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 input:focus, select:focus, textarea:focus { outline: none; @include box-shadow-input(none); }
 input[type=checkbox] { @include appearance( checkbox ); }
 input[type=radio] { @include appearance( radio ); }
-img { width: 20%; height: auto; }
+img { width: 15%; height: auto; }
 figure { margin: 0; }
 p { margin-bottom: 0px; font-size: 15px; color: #777;}
 h2 { 
