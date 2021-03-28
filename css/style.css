@@ -272,6 +272,10 @@ figure {
   margin-bottom: 10px;
   text-align: center; }
 
+  a{
+    text-decoration: none;
+    color: white;
+  }
 .form-submit {
   display: inline-block;
   background: #6dabe4;
