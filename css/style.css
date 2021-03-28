@@ -289,6 +289,36 @@ figure {
   .form-submit:hover {
     background: #4292dc; }
 
+/* result */
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Total Score";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+   font-size: 18px;
+   font-weight: bold;
+   display: block;
+   text-decoration: underline;
+   text-transform: capitalize;
+}
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+/* -------------------------------------------------------- */
+
 #signin {
   margin-top: 16px; }
 

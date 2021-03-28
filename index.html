@@ -15,7 +15,6 @@
 <body>
 
     <div class="main">
-
         <!-- Sign up form -->
         <section class="signup">
             <div class="container">
@@ -24,10 +23,10 @@
                         <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
                         <h2 class="form-title">Socio Economic Indicator</h2>
                         <form method="POST" class="register-form" id="register-form">
-                            <div class="form-group">                               
+                            <div class="form-group" id="calculator">                               
                                 
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <select id="serviceQual" id="name">
+                                <select id="education" id="name">
                                     <option disabled selected value="0">Education of Head of Family?</option>
                                     <option value="7"> Professional Degree     </option>
                                     <option value="6"> Graduate                </option>
@@ -40,7 +39,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-email"></i></label>
-                                <select id="serviceQual">
+                                <select id="Occ">
                                     <option disabled selected value="0">Occupation of head of family?</option>
                                     <option value="10"> Professional            </option>
                                     <option value="6"> Semi Professional       </option>
@@ -53,16 +52,23 @@
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="number" name="re_pass" id="re_pass" placeholder="Family Income?"/>
+                                <input type="number" name="re_pass" id="income" placeholder="Family Income?"/>
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-account"></i></label>
-                                <input type="number" name="re_pass" id="re_pass" placeholder="No. of People"/>
+                                <input type="number" name="re_pass" id="people" placeholder="No. of People"/>
                             </div>
+
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Calculate"/>
+                                <!-- <input type="submit" name="signup" id="signup" class="form-submit" value="Calculate"/> -->
+                                 <div class="form-submit" id="calculate">Calculate!</div>
                             </div>
                         </form>
+                        <div id="totalTip" class="res">
+                            <sup></sup><span id="tip">0.00</span><br>
+                            <div><sup>category</sup></div><span id="cat">0.00</span>
+                            <small id="each"></small>
+                        </div>
                     </div>
                     <!--
                     <div class="signup-image">
@@ -70,6 +76,7 @@
                         <a href="#" class="signup-image-link">I am already member</a>
                     </div>-->
                 </div>
+                
             </div>
         </section>
 
@@ -117,7 +124,7 @@
     </div>
     --> 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
     <script src="js/main.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
